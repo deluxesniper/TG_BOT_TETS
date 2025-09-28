@@ -10,6 +10,9 @@ from handlers.addresses import XL_address,XL_city,XL_email,XL_phone,XL_opening_h
 router=Router()
 
 
+#
+
+
 @router.callback_query(F.data=="paint calculation")
 async def paint_to_calculate_handler(call: CallbackQuery):
     await call.answer()
